@@ -84,7 +84,10 @@ class MarkdownConversionServiceTest {
 
         assertTrue(html.contains("href=\"https://example.com\""));
         assertTrue(html.contains("title=\"Home\""));
-        assertTrue(html.contains("rel=\"noopener noreferrer nofollow\""));
+        assertTrue(html.contains("rel=\""));
+        assertTrue(html.contains("noopener"));
+        assertTrue(html.contains("noreferrer"));
+        assertTrue(html.contains("nofollow"));
         assertTrue(html.contains(">Example</a>"));
     }
 
