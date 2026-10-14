@@ -1,0 +1,21 @@
+MARKDOWN TO HTML CONVERTER PRO — SIMPLE WINDOWS START
+
+You already have Java 21. This project now includes a Maven bootstrap script, so you do NOT need to install Maven globally.
+
+1. Extract this ZIP.
+2. Open the extracted folder, then open the "backend" folder.
+3. Click the address bar in File Explorer, type powershell, and press Enter.
+4. Copy and paste this command:
+
+   .\mvnw.cmd spring-boot:run
+
+On first run, the script downloads Maven and the Java dependencies. This requires an internet connection and can take a few minutes. Wait until the terminal says the app has started.
+5. Open http://localhost:8080 in your browser.
+6. Keep PowerShell open while using the site. Press Ctrl+C to stop it.
+
+To run tests first:
+   .\mvnw.cmd clean test
+
+ONLINE DEPLOYMENT
+
+The project includes Dockerfile and render.yaml for Render deployment. You still need to upload this project to a GitHub repository and connect that repository to Render. Hosting platforms require you to sign in and authorize deployment; this ZIP alone cannot create a public URL. Do not put a placeholder URL on your resume. Add the live URL after Render reports a successful deploy and you have opened the site successfully.
